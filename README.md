@@ -21,4 +21,4 @@ Method=GET
 OSDComputerName=name
 ```
 
-And copy the PHP script *ws_computername.php* on the GLPI server (in this example : ``https://glpi.domain.com/``).
+And copy the PHP script *ws_computername.php* on the GLPI server (in this example : ``https://glpi.domain.com/`` , assuming that the GLPI server is accessible from ``https://glpi.domain.com/glpi/``).
