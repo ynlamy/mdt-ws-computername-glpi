@@ -8,17 +8,17 @@ This PHP script have been created by Yoann LAMY under the terms of the [GNU Gene
 
 ### Installation
 
-In Microsoft Deployment, edit the file *<DeployRoot>\Control\CustomSettings.ini* to define the web service by specifying its URL (in this example : http://glpi.domain.com/) :
+In Microsoft Deployment Toolkit, edit the file *\<DeployRoot\>\Control\CustomSettings.ini* to define the web service by specifying its URL (in this example : ``https://glpi.domain.com/``) :
   
 ```
 [Settings]
 Priority=GetComputerName,Default
 
 [GetComputerName]
-WebService=http://glpi.domain.com/ws_computername.php
+WebService=https://glpi.domain.com/ws_computername.php
 Parameters=SerialNumber
 Method=GET
 OSDComputerName=name
 ```
 
-Copy the PHP script *ws_computername.php* on the GLPI server (in this example : http://glpi.domain.com/).
+And copy the PHP script *ws_computername.php* on the GLPI server (in this example : ``https://glpi.domain.com/``).
